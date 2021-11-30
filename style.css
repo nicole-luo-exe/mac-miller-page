@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;900&display=swap');
+
+*
+{
+    font-family: 'Playfair Display', serif;
+    font-size: 14px;
+    color: black;
+}
+
+/* This is a comment, by the way */
+body
+{
+    position: relative;
+    width: 100%;
+    min-height: 15vh;
+    display: flex;
+    background: #dac1bd;
+    justify-content: center;
+    align-items: center;
+
+}
+
+header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 10px 10px;
+    display: flex;
+    align-items: center;
+}
+
+header ul li
+{
+    display: inline-block;
+    list-style: none;
+    margin: 10px 30px;
+}
+
+header ul li a
+{
+    text-decoration: none;
+}
+
+.content
+{
+    position: relative;
+    top: 94px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.content .cover
+{
+    position: relative;
+    height: 550px;
+    width: 550px;
+    margin: 30px 10px;
+    padding: 20px 15px;
+    background: #ffffff;
+    display: flex;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.5);
+}
+.content .cover:hover
+{
+    height: 550px;
+    width: 1100px;
+    transition: 0.5s ease-in-out;
+}
+.content .cover .imgBox {
+    position: relative;
+    left: -60px;
+    width: 550px;
+    padding: 20px;
+}
+.content .cover .imgBox img {
+    width: 500px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.5);
+}
+.content .cover .textBox
+{
+    position: relative;
+    visibility: hidden;
+    max-width: 100%;
+    font-size: 1.5em;
+}
+
+.content .cover:hover .textBox
+{
+    visibility: visible;
+    opacity: 1;
+    transition-delay: 0.5s;
+}
+
+.content .cover .textBox h2
+{
+    font-size: 4em;
+    font-weight: 900;
+}
+
